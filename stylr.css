@@ -5,8 +5,8 @@
 }
 
 body {
-    font-family: system-ui, sans-serif;
-    background-color: #f7f3fc;
+    font-family: Arial, sans-serif;
+    background-color: #fff1f1;
     margin: 0;
     padding: 30px 15px;
     min-height: 100vh;
@@ -20,9 +20,10 @@ body {
     max-width: 550px;
     margin: 30px auto;
     padding: 30px;
-    border: 2px solid blueviolet;
-    border-radius: 20px;
+    border: 2px solid #d94343;
+    border-radius: 15px;
     background-color: white;
+    box-shadow: 0 5px 15px rgba(180, 40, 40, 0.12);
 }
 
 
@@ -30,7 +31,7 @@ body {
 
 h1 {
     font-size: clamp(24px, 5vw, 30px);
-    color: blueviolet;
+    color: #b52b35;
     margin-top: 0;
 }
 
@@ -41,6 +42,7 @@ label {
     display: block;
     font-size: 16px;
     margin-bottom: 12px;
+    color: #444;
 }
 
 
@@ -50,11 +52,17 @@ label {
     display: block;
     width: 100%;
     max-width: 100%;
-    padding: 10px;
-    border: 1px solid #b9a0d5;
-    border-radius: 8px;
-    font-size: 14px;
-    background-color: white;
+    padding: 12px;
+    border: 1px solid #e5a2a2;
+    border-radius: 7px;
+    font-size: 15px;
+    background-color: #fffafa;
+    cursor: pointer;
+}
+
+#nacimiento:focus {
+    outline: 2px solid #d94343;
+    border-color: #d94343;
 }
 
 
@@ -62,23 +70,25 @@ label {
 
 button {
     border: none;
-    border-radius: 25px;
-    background-color: blueviolet;
-    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #d94343;
+    padding: 11px 22px;
     color: white;
     margin-top: 15px;
     cursor: pointer;
+    font-size: 15px;
 }
 
 button:hover {
-    background-color: #6525a5;
+    background-color: #a9232e;
 }
 
 
 /* Mensajes */
 
 #mensaje {
-    color: red;
+    color: #c62828;
+    font-size: 14px;
 }
 
 #edad-calculada {
@@ -86,7 +96,7 @@ button:hover {
     margin-top: 15px;
     font-size: 20px;
     font-weight: bold;
-    color: blueviolet;
+    color: #b52b35;
 }
 
 
@@ -96,7 +106,7 @@ button:hover {
     width: 307px;
     max-width: calc(100vw - 20px);
     font-size: 14px;
-    box-shadow: 0 5px 20px rgba(75, 35, 110, 0.15);
+    box-shadow: 0 5px 20px rgba(169, 35, 46, 0.15);
     border-radius: 10px;
 }
 
@@ -121,30 +131,35 @@ button:hover {
 .flatpickr-day.selected,
 .flatpickr-day.startRange,
 .flatpickr-day.endRange {
-    background: blueviolet;
-    border-color: blueviolet;
+    background: #d94343;
+    border-color: #d94343;
 }
 
 .flatpickr-day.selected:hover {
-    background: #6525a5;
-    border-color: #6525a5;
+    background: #a9232e;
+    border-color: #a9232e;
 }
 
 
 /* Adaptación a celulares */
 
 @media (max-width: 480px) {
+
     body {
         padding: 15px 10px;
     }
+
     .encabezado {
         padding: 22px 18px;
         margin: 15px auto;
     }
+
     label {
         font-size: 15px;
     }
+
     #edad-calculada {
         font-size: 18px;
     }
+
 }
