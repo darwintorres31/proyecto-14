@@ -1,4 +1,4 @@
-// Comprobar que las librerías estén cargadas
+// Comprobar que las librerías 
 
 if (typeof flatpickr === "undefined") {
     alert("Error: Flatpickr no se ha cargado.");
